@@ -1,0 +1,17 @@
+.post-title-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.post-title-container h1 {
+  margin-right: 30px;
+}
+
+.post-title-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 54px;
+}
