@@ -1,11 +1,7 @@
-import { useState } from "react";
+import useToggle from "../hooks/useToggle";
 
 function PostItem(props) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
+  const { isOpen, toggle } = useToggle();
 
   return (
     <div className="post">

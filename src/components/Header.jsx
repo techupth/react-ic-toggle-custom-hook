@@ -1,13 +1,8 @@
+import useToggle from "../hooks/useToggle";
 import "./Header.css";
 
-import { useState } from "react";
-
 function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
+  const { isOpen, toggle } = useToggle();
 
   return (
     <header>
